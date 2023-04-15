@@ -1,0 +1,38 @@
+@startmindmap Spring-Practice-2023
++ アプリケーション
+++_ クライアントサイド
++++_ jQuery不使用
++++_ ライブラリ導入
+++++_ Node.js
++++++_ クライアントサイド向けライブラリ導入
++++_ 画面の動作やレイアウト
+++++_ テーブル
+++++_ ページング
+++++_ モーダル
++++_ テスト
+++++_ Jest
++++++_ 書籍購入
++++++_ Ajax部分
++++++_ Validation部分
+
+left side 
+
+--_ サーバサイド
+---_ Gradle
+----_ マルチプロジェクト
+-----_ ドライバアプリ
+---_ Java
+----_ Spring Boot
+-----_ Spring Session
+------_ セッション格納先テーブル
+-----_ Spring Security
+------_ 外部アプリケーション連携
+-----_ Bean Validation
+------_ 相関チェック
+------_ クライアント側Validationとの両立
+-------_ Ajax
+-------_ ページ遷移
+---_ Thymeleanf
+---_ Mybatis
+
+@endmindmap
