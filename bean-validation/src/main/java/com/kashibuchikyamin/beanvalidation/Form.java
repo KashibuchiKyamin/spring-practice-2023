@@ -1,5 +1,7 @@
 package com.kashibuchikyamin.beanvalidation;
 
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
 /**
@@ -12,12 +14,15 @@ public class Form {
 	/**
 	 * 氏名
 	 */
+	@NotBlank
 	String name;
 	
 	
 	/**
 	 * メールアドレス
 	 */
+	@NotBlank
+	@Email
 	String email;
 	
 	/**

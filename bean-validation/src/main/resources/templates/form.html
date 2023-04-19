@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="ja" xmlns:th="http://www.thymeleaf.org">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>入力フォーム</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>入力フォーム</title>
 </head>
+
 <body>
-  <h1>なんか入力フォーム(通常のPOST/Redirect)</h1>
-  <form action="./result.html" th:action="@{/form}" method="post">
-    <label for="">氏名: 
-      <input type="text" name="name">
-    </label>
-    <br>
-    <label for="">メールアドレス: 
-      <input type="email" name="email">
-    </label>
-    <br>
-    <label for="">電話連絡可能: 
-      <input type="checkbox" name="useTel">
-    </label>
-    <br>
-    <label for="">電話番号: 
-      <input type="tel" name="telNumber">
-    </label>
-    <br>
-    <input type="submit" value="送信">
-  </form>
+	<h1>なんか入力フォーム(通常のPOST/Redirect)</h1>
+	<form action="./result.html" th:action="@{/form}" method="post" th:object="${form}">
+		<label for="">氏名:
+			<input type="text" name="name" th:field="*{name}">
+		</label>
+		<br>
+		<label for="">メールアドレス:
+			<input type="text" name="email" th:field="*{email}">
+		</label>
+		<br>
+		<label for="">電話連絡可能:
+			<input type="checkbox" name="useTel" th:field="*{useTel}">
+		</label>
+		<br>
+		<label for="">電話番号:
+			<input type="tel" name="telNumber" th:field="*{telNumber}">
+		</label>
+		<br>
+		<input type="submit" value="送信">
+	</form>
 </body>
+
 </html>
