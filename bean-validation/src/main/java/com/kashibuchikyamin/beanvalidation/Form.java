@@ -16,20 +16,19 @@ public class Form {
 	 */
 	@NotBlank
 	String name;
-	
-	
+
 	/**
 	 * メールアドレス
 	 */
 	@NotBlank
 	@Email
 	String email;
-	
+
 	/**
 	 * 電話連絡可能
 	 */
 	boolean useTel;
-	
+
 	/**
 	 * 電話番号
 	 */
