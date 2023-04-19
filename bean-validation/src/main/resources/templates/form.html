@@ -8,7 +8,7 @@
 </head>
 <body>
   <h1>なんか入力フォーム(通常のPOST/Redirect)</h1>
-  <form action="./result.html" method="post">
+  <form action="./result.html" th:action="@{/form}" method="post">
     <label for="">氏名: 
       <input type="text" name="name">
     </label>
@@ -25,7 +25,7 @@
       <input type="tel" name="telNumber">
     </label>
     <br>
-    <input type="button" value="送信">
+    <input type="submit" value="送信">
   </form>
 </body>
 </html>
